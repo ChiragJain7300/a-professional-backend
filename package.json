@@ -1,0 +1,11 @@
+{
+  "name": "production-grade-backend",
+  "version": "1.0.0",
+  "description": "This is a project which demonstrates how Backend are created in Professional Software Companies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chirag Jain and (chaiaurBackend)",
+  "license": "ISC"
+}
