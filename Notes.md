@@ -24,3 +24,7 @@ After installing _prettier_ some files are required to created for it to start f
 
 ## Database Connection
 
+<<<<<<< HEAD
+=======
+If you have an empty folder, it will not keep track of that folder as ***Git*** only tracks files not folders. In order to avoid that you can create a `.gitkeep` file in that folder.
+>>>>>>> 26d57b8082ec09972c62014b3e5786d236a39194
