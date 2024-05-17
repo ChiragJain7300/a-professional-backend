@@ -24,7 +24,10 @@ After installing _prettier_ some files are required to created for it to start f
 
 ## Database Connection
 
-<<<<<<< HEAD
-=======
-If you have an empty folder, it will not keep track of that folder as ***Git*** only tracks files not folders. In order to avoid that you can create a `.gitkeep` file in that folder.
->>>>>>> 26d57b8082ec09972c62014b3e5786d236a39194
+In order to avoid to cluttering the `index.js`(main server file), we create a module inside `db` folder which connects the database with the project.
+
+The important credentials are stored in the `.env` file which is not to be uploaded to the *GIT*.
+
+Always use `try catch` and `async await` while connecting the database.
+
+
