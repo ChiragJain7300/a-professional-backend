@@ -1,0 +1,9 @@
+node_modules
+node_modules_container
+.git
+.vscode-test
+dist
+
+.env
+
+Notes.md
