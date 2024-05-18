@@ -1,13 +1,21 @@
-import {configDotenv } from "dotenv";
-import mongoose from "mongoose";
-import express from "express";
+import { configDotenv } from "dotenv";
 import { DB_NAME } from "../src/constants.js";
 import { connectDb } from "./db/index.js";
-const app = express();
-
+import { app } from "./app.js";
 configDotenv({ path: "../.env" });
 
-connectDb();
+connectDb()
+  .then(() => {
+    app.on("error", (error) => {
+      console.log("The error is ", error);
+    });
+    app.listen(process.env.PORT || 8000, () => {
+      console.log(`The server is listening on ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.log("MongoDB connection error !!!", err);
+  });
 /*(async () => {
   try {
     const connString = await mongoose.connect(
